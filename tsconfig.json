@@ -1,0 +1,23 @@
+{
+    "compilerOptions": {
+      "target": "es5",                           // Define a versão do JavaScript de saída (compatível com a maioria dos navegadores)
+      "lib": ["dom", "dom.iterable", "esnext"],   // Define as bibliotecas que o TypeScript vai considerar
+      "allowJs": true,                            // Permite arquivos .js no projeto (útil se você estiver migrando de JavaScript para TypeScript)
+      "skipLibCheck": true,                       // Ignora a verificação de tipos de arquivos de definição de biblioteca
+      "esModuleInterop": true,                    // Facilita a importação de módulos CommonJS
+      "allowSyntheticDefaultImports": true,       // Permite importações padrão de módulos que não têm uma exportação padrão
+      "strict": true,                             // Habilita várias verificações rigorosas de tipo
+      "forceConsistentCasingInFileNames": true,   // Força a consistência de maiúsculas/minúsculas nos nomes dos arquivos
+      "module": "esnext",                         // Define o sistema de módulos para 'esnext' (para suportar imports/export)
+      "moduleResolution": "node",                 // Usa a resolução de módulos compatível com o Node.js
+      "resolveJsonModule": true,                  // Permite importar arquivos JSON como módulos
+      "jsx": "react-jsx"                          // Configura JSX para o React com TypeScript (React 17+)
+    },
+    "include": [
+      "src/**/*"                                  // Inclui todos os arquivos dentro da pasta 'src'
+    ],
+    "exclude": [
+      "node_modules"                              // Exclui a pasta 'node_modules'
+    ]
+  }
+  
