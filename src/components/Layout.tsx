@@ -26,6 +26,9 @@ const Layout: React.FC<{ children: React.ReactNode }> = ({ children }) => {
         <ListItem component={Link} to="/products/add">
           <ListItemText primary={<Typography sx={{ fontWeight: "bold" }}>Adicionar Produto</Typography>} />
         </ListItem>
+        <ListItem component={Link} to="/productsNoJinja">
+        <ListItemText primary={<Typography sx={{ fontWeight: "bold" }}>Produtos na rota do Jinja2</Typography>} />
+      </ListItem>
       </List>
     </div>
   );
