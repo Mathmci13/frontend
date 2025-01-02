@@ -51,6 +51,11 @@ const EditProduct: React.FC = () => {
         variant="outlined"
         fullWidth
         value={productData.id}
+        slotProps={{
+          input: {
+            readOnly: true,
+          },
+        }}
         style={{ marginBottom: '20px' }}
         
       />
